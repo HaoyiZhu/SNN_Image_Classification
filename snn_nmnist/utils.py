@@ -1,5 +1,5 @@
 """
-SNN and NMNIST related util functions.
+Model and data related util functions.
 
 Author: Haoyi Zhu
 """
@@ -31,6 +31,24 @@ def build_dataloader(
     path: str = "./data/mnist",
     subset: int = 1,
 ):
+    """
+    Build dataloaders of MNIST dataset.
+
+    Modified from https://snntorch.readthedocs.io/en/latest/tutorials/tutorial_6.html
+
+    Parameters
+    ----------
+    batch_size: int
+        Batch size.
+    path: str
+        Path to the data folder.
+    subset: int
+        Reduce factor of dataset. In each iteration only 1 / subset data.
+
+    Returns
+    -------
+    Train and test dataloader of MNIST dataset.
+    """
     transform = transforms.Compose(
         [
             transforms.Resize((28, 28)),
@@ -78,7 +96,6 @@ def build_dataloader_nmnist(
     -------
     Train and test dataloader of NMNIST dataset.
     """
-
     # create datasets
     train_ds = spikedata.NMNIST(path, train=True)
     test_ds = spikedata.NMNIST(path, train=False)
@@ -174,7 +191,7 @@ def build_model(
     - MP2 is a 2 × 2 max-pooling function
     - 1024FC10 is a fully-connected layer that maps 1,024 neurons to 10 outputs
 
-    Modified from https://colab.research.google.com/github/jeshraghian/snntorch/blob/master/examples/tutorial_6_CNN.ipynb#scrollTo=6v8fBXrVlY3f
+    Modified from https://snntorch.readthedocs.io/en/latest/tutorials/tutorial_6.html
 
     Parameters
     ----------
@@ -214,7 +231,7 @@ def forward_pass(
     """
     Forward pass function of CSNN.
 
-    Modified from https://colab.research.google.com/github/jeshraghian/snntorch/blob/master/examples/tutorial_6_CNN.ipynb#scrollTo=ykdnD3tRuHcs
+    Modified from https://snntorch.readthedocs.io/en/latest/tutorials/tutorial_6.html
 
     Parameters
     ----------
@@ -243,7 +260,9 @@ def forward_pass(
 
 
 def plot_data(train_loss_hist, test_acc_hist, save_path):
-    # Plot Loss
+    """
+    Plot training loss and testing accuracy curves
+    """
     fig = plt.figure(facecolor="w")
     plt.plot(train_loss_hist)
     plt.title("Train Set Loss")
@@ -260,6 +279,9 @@ def plot_data(train_loss_hist, test_acc_hist, save_path):
 
 
 def spike_counter(m, train_dataloader, cfg, device, num=5):
+    """
+    Plot some spike counter examples.
+    """
     m.eval()
 
     data, targets = next(iter(train_dataloader))

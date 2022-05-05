@@ -4,7 +4,7 @@ Training script for SNN on NMNIST.
 Author: Haoyi Zhu
 
 Ref:
-    [1] https://snntorch.readthedocs.io/en/stable/tutorials/tutorial_7.html
+    [1] https://snntorch.readthedocs.io/en/latest/tutorials/tutorial_6.html
 """
 
 import hydra

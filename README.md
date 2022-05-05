@@ -35,7 +35,7 @@ The system is implemented with [hydra](https://hydra.cc/docs/intro/). The config
 CUDA_VISIBLE_DEVICES=0 python scripts/train.py
 
 # To customize configuration settings:
-CUDA_VISIBLE_DEVICES=0 python scripts/train.py exp_id=subset1 data.subset=1 train.num_epochs=100
+CUDA_VISIBLE_DEVICES=0 python scripts/train.py exp_id=subset1_epochs100 data.subset=1 train.num_epochs=100
 ```
 
 All flags can be found [here](configs/default.yaml).
@@ -44,7 +44,7 @@ All flags can be found [here](configs/default.yaml).
 
 The results and logs can be found in `exp/{exp_id}/` after running my script, which contains the checkpoints, logs and some visualization results.
 
-For default setting, I achieve a final test accuracy of  **98%**. The log file can be found [here](docs/training.log).
+For default setting, I achieve a final test accuracy of  **98.21%**. The log file can be found [here](docs/training.log).
 
 Training loss curve and testing accuracy curve are shown as below:
 
@@ -54,23 +54,23 @@ Training loss curve and testing accuracy curve are shown as below:
 
 Some spike counter examples:
 
-- **Target: 2 **
+- **Target: 2**
 
   ![spike_bar_0_target2](docs/spike_bar_0_target2.gif)
 
-- **Target: 9 **
+- **Target: 9**
 
   ![spike_bar_1_target9](docs/spike_bar_1_target9.gif)
 
-- **Target: 4 **
+- **Target: 4**
 
   ![spike_bar_2_target4](docs/spike_bar_2_target4.gif)
 
-- **Target: 4 **
+- **Target: 4**
 
   ![spike_bar_3_target4](docs/spike_bar_3_target4.gif)
 
-- **Target: 7 **
+- **Target: 7**
 
   ![spike_bar_4_target7](docs/spike_bar_4_target7.gif)
 
