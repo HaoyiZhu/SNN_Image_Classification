@@ -96,25 +96,25 @@ Training loss curve and testing accuracy curve are shown as below:
 
 Some spike counter examples:
 
-- **Target: 8**
-
-  ![spike_bar_0_target8](docs/spike/spike_bar_0_target8.gif)
-
-- **Target: 0**
-
-  ![spike_bar_1_target0](docs/spike/spike_bar_1_target0.gif)
-
-- **Target: 1**
-
-  ![spike_bar_2_target1](docs/spike/spike_bar_2_target1.gif)
-
-- **Target: 1**
-
-  ![spike_bar_3_target1](docs/spike/spike_bar_3_target1.gif)
-
 - **Target: 6**
 
-  ![spike_bar_4_target6](docs/spike/spike_bar_4_target6.gif)
+  ![spike_bar_0_target6](docs/spike/spike_bar_0_target6.gif)
+
+- **Target: 5**
+
+  ![spike_bar_1_target5](docs/spike/spike_bar_1_target5.gif)
+
+- **Target: 3**
+
+  ![spike_bar_2_target3](docs/spike/spike_bar_2_target3.gif)
+
+- **Target: 7**
+
+  ![spike_bar_3_target1](docs/spike/spike_bar_3_target7.gif)
+
+- **Target: 9**
+
+  ![spike_bar_4_target6](docs/spike/spike_bar_4_target9.gif)
 
 ## Acknowledgement
 
