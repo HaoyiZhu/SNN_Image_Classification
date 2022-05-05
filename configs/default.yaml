@@ -1,0 +1,27 @@
+defaults:
+  - _self_  # all below configs will override this conf.yaml
+
+exp_id: "default"
+
+model:
+  slope: 25
+  beta: 0.5
+
+data:
+  root: "./data"
+  subset: 10
+
+train:
+  batch_size: 128
+  num_epochs: 45
+  num_steps: 50
+  lr: 1e-2
+  lr_step:
+    - 15
+    - 30
+  lr_factor: 0.1
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null

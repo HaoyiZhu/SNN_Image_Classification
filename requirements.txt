@@ -1,0 +1,11 @@
+pyyaml
+hydra-core
+h5py
+tqdm
+requests
+IPython
+pandas
+matplotlib
+tonic
+torch
+snntorch
