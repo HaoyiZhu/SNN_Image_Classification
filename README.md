@@ -16,13 +16,21 @@ pip3 install torch torchvision torchaudio --extra-index-url https://download.pyt
 pip install -e .
 ```
 
+## Instructions
+
+The library is implemented with [hydra](https://hydra.cc/docs/intro/), [PyTorch](https://pytorch.org/) and [snnTorch](https://snntorch.readthedocs.io/en/stable/index.html).
+
+The main script of training is `scripts/train.py` and the main library is under `snn_nmnist/` where `snn_nmnist/logger.py` contains some functions of logging and `snn_nmnist/utils.py` contains all necessary related util functions from model and dataloader building to result visualization, etc.
+
+By default, the model is trained for $20$ epoches on a single NVIDIA GeForce RTX 3090 GPU with a batch size of $1024$. Adam optimizer is applied with an initial learning rate of $1e-2$, and the learning rate will be reduced by $10$ after $10$ and $15$ iterations.
+
 ## Model
 
-In this library, I implement a simple convolutional spiking neural network (CSNN) . The convolutional network architecture to be used is: 12C5-MP2-64C5-MP2-1024FC10.
+In this library, I implement a simple convolutional spiking neural network (CSNN) . The convolutional network architecture to be used is: `12C5-MP2-64C5-MP2-1024FC10`.
 
-- 12C5 is a 5×5 convolutional kernel with 12 filters
-- MP2 is a 2×2 max-pooling function
-- 1024FC10 is a fully-connected layer that maps 1,024 neurons to 10 outputs
+- `12C5` is a 5×5 convolutional kernel with 12 filters
+- `MP2` is a 2×2 max-pooling function
+- `1024FC10` is a fully-connected layer that maps 1,024 neurons to 10 outputs
 
 The detailed implementation can be found [here](snn_nmnist/utils.py). (See the `build_model` function)
 
@@ -44,7 +52,7 @@ All flags can be found [here](configs/default.yaml).
 
 The results and logs can be found in `exp/{exp_id}/` after running my script, which contains the checkpoints, logs and some visualization results.
 
-For default setting, I achieve a final test accuracy of  **98.21%**. The log file can be found [here](docs/training.log).
+For default setting, I achieve a final test accuracy of  **99.12%**. The log file can be found [here](docs/training.log). You can reduce the `data.subset` parameter or raise the `train.num_epochs` parameter in configuration to obtain a better result.
 
 Training loss curve and testing accuracy curve are shown as below:
 
@@ -54,25 +62,25 @@ Training loss curve and testing accuracy curve are shown as below:
 
 Some spike counter examples:
 
-- **Target: 2**
+- **Target: 8**
 
-  ![spike_bar_0_target2](docs/spike_bar_0_target2.gif)
+  ![spike_bar_0_target8](docs/spike_bar_0_target8.gif)
 
-- **Target: 9**
+- **Target: 0**
 
-  ![spike_bar_1_target9](docs/spike_bar_1_target9.gif)
+  ![spike_bar_1_target0](docs/spike_bar_1_target0.gif)
 
-- **Target: 4**
+- **Target: 1**
 
-  ![spike_bar_2_target4](docs/spike_bar_2_target4.gif)
+  ![spike_bar_2_target1](docs/spike_bar_2_target1.gif)
 
-- **Target: 4**
+- **Target: 1**
 
-  ![spike_bar_3_target4](docs/spike_bar_3_target4.gif)
+  ![spike_bar_3_target1](docs/spike_bar_3_target1.gif)
 
-- **Target: 7**
+- **Target: 6**
 
-  ![spike_bar_4_target7](docs/spike_bar_4_target7.gif)
+  ![spike_bar_4_target6](docs/spike_bar_4_target6.gif)
 
 ## Acknowledgement
 

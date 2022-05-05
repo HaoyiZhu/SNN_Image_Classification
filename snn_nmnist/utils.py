@@ -30,6 +30,7 @@ def build_dataloader(
     batch_size: int = 128,
     path: str = "./data/mnist",
     subset: int = 1,
+    num_workers: int = 0,
 ):
     """
     Build dataloaders of MNIST dataset.
@@ -63,13 +64,12 @@ def build_dataloader(
 
     # reduce datasets by $subset x to speed up training
     U.data_subset(mnist_train, subset)
-    U.data_subset(mnist_test, subset)
 
     train_loader = DataLoader(
-        mnist_train, batch_size=batch_size, shuffle=True, drop_last=True
+        mnist_train, batch_size=batch_size, shuffle=True, drop_last=False, num_workers=num_workers,
     )
     test_loader = DataLoader(
-        mnist_test, batch_size=batch_size, shuffle=True, drop_last=True
+        mnist_test, batch_size=batch_size, shuffle=True, drop_last=False, num_workers=num_workers,
     )
 
     return train_loader, test_loader

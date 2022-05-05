@@ -1,158 +1,83 @@
 ******************************
-{'exp_id': 'default', 'model': {'slope': 25, 'beta': 0.5}, 'data': {'root': './data', 'subset': 10}, 'train': {'batch_size': 128, 'num_epochs': 45, 'num_steps': 50, 'lr': 0.01, 'lr_step': [15, 30], 'lr_factor': 0.1}}
+{'exp_id': 'default', 'model': {'slope': 25, 'beta': 0.5}, 'data': {'root': './data', 'subset': 1, 'num_workers': 32}, 'train': {'batch_size': 1024, 'num_steps': 50, 'num_epochs': 20, 'lr': 0.01, 'lr_step': [10, 15], 'lr_factor': 0.1}}
 ******************************
 ############# Starting Epoch 0 | LR: 0.01 #############
-Epoch 0 | Train loss: 1.7262709140777588
-Epoch 0 | Test acc: 0.9017857142857143
+Epoch 0 | Train loss: 1.6738241910934448
+Epoch 0 | Test acc: 0.9672
 ############# Starting Epoch 1 | LR: 0.01 #############
-Epoch 1 | Train loss: 1.5277055501937866
-Epoch 1 | Test acc: 0.9453125
+Epoch 1 | Train loss: 1.4947752952575684
+Epoch 1 | Test acc: 0.9817
 ############# Starting Epoch 2 | LR: 0.01 #############
-Epoch 2 | Train loss: 1.5079371929168701
-Epoch 2 | Test acc: 0.9553571428571429
+Epoch 2 | Train loss: 1.4840238094329834
+Epoch 2 | Test acc: 0.9846
 ############# Starting Epoch 3 | LR: 0.01 #############
-Epoch 3 | Train loss: 1.4919874668121338
-Epoch 3 | Test acc: 0.9631696428571429
+Epoch 3 | Train loss: 1.4797662496566772
+Epoch 3 | Test acc: 0.9839
 ############# Starting Epoch 4 | LR: 0.01 #############
-Epoch 4 | Train loss: 1.4877004623413086
-Epoch 4 | Test acc: 0.9665178571428571
+Epoch 4 | Train loss: 1.476882815361023
+Epoch 4 | Test acc: 0.9862
 ############# Starting Epoch 5 | LR: 0.01 #############
-Epoch 5 | Train loss: 1.485114574432373
-Epoch 5 | Test acc: 0.9620535714285714
+Epoch 5 | Train loss: 1.475311040878296
+Epoch 5 | Test acc: 0.9887
 ############# Starting Epoch 6 | LR: 0.01 #############
-Epoch 6 | Train loss: 1.4818626642227173
-Epoch 6 | Test acc: 0.9732142857142857
+Epoch 6 | Train loss: 1.4739198684692383
+Epoch 6 | Test acc: 0.988
 ############# Starting Epoch 7 | LR: 0.01 #############
-Epoch 7 | Train loss: 1.479967713356018
-Epoch 7 | Test acc: 0.9709821428571429
+Epoch 7 | Train loss: 1.4725602865219116
+Epoch 7 | Test acc: 0.9895
 ############# Starting Epoch 8 | LR: 0.01 #############
-Epoch 8 | Train loss: 1.4765433073043823
-Epoch 8 | Test acc: 0.9743303571428571
+Epoch 8 | Train loss: 1.4716637134552002
+Epoch 8 | Test acc: 0.9875
 ############# Starting Epoch 9 | LR: 0.01 #############
-Epoch 9 | Train loss: 1.4740467071533203
-Epoch 9 | Test acc: 0.9743303571428571
-############# Starting Epoch 10 | LR: 0.01 #############
-Epoch 10 | Train loss: 1.473554015159607
-Epoch 10 | Test acc: 0.9799107142857143
-############# Starting Epoch 11 | LR: 0.01 #############
-Epoch 11 | Train loss: 1.4721957445144653
-Epoch 11 | Test acc: 0.9732142857142857
-############# Starting Epoch 12 | LR: 0.01 #############
-Epoch 12 | Train loss: 1.4722602367401123
-Epoch 12 | Test acc: 0.9732142857142857
-############# Starting Epoch 13 | LR: 0.01 #############
-Epoch 13 | Train loss: 1.4731804132461548
-Epoch 13 | Test acc: 0.9765625
-############# Starting Epoch 14 | LR: 0.01 #############
-Epoch 14 | Train loss: 1.4719845056533813
-Epoch 14 | Test acc: 0.9776785714285714
-############# Starting Epoch 15 | LR: 0.001 #############
-Epoch 15 | Train loss: 1.469405174255371
-Epoch 15 | Test acc: 0.9832589285714286
-############# Starting Epoch 16 | LR: 0.001 #############
-Epoch 16 | Train loss: 1.4674232006072998
-Epoch 16 | Test acc: 0.984375
-############# Starting Epoch 17 | LR: 0.001 #############
-Epoch 17 | Train loss: 1.4671292304992676
-Epoch 17 | Test acc: 0.9877232142857143
-############# Starting Epoch 18 | LR: 0.001 #############
-Epoch 18 | Train loss: 1.4664098024368286
-Epoch 18 | Test acc: 0.984375
-############# Starting Epoch 19 | LR: 0.001 #############
-Epoch 19 | Train loss: 1.4665873050689697
-Epoch 19 | Test acc: 0.984375
-############# Starting Epoch 20 | LR: 0.001 #############
-Epoch 20 | Train loss: 1.4665230512619019
-Epoch 20 | Test acc: 0.984375
-############# Starting Epoch 21 | LR: 0.001 #############
-Epoch 21 | Train loss: 1.46616792678833
-Epoch 21 | Test acc: 0.9854910714285714
-############# Starting Epoch 22 | LR: 0.001 #############
-Epoch 22 | Train loss: 1.466227650642395
-Epoch 22 | Test acc: 0.9854910714285714
-############# Starting Epoch 23 | LR: 0.001 #############
-Epoch 23 | Train loss: 1.4661483764648438
-Epoch 23 | Test acc: 0.9821428571428571
-############# Starting Epoch 24 | LR: 0.001 #############
-Epoch 24 | Train loss: 1.4659032821655273
-Epoch 24 | Test acc: 0.984375
-############# Starting Epoch 25 | LR: 0.001 #############
-Epoch 25 | Train loss: 1.46599280834198
-Epoch 25 | Test acc: 0.984375
-############# Starting Epoch 26 | LR: 0.001 #############
-Epoch 26 | Train loss: 1.4657906293869019
-Epoch 26 | Test acc: 0.984375
-############# Starting Epoch 27 | LR: 0.001 #############
-Epoch 27 | Train loss: 1.465927004814148
-Epoch 27 | Test acc: 0.9832589285714286
-############# Starting Epoch 28 | LR: 0.001 #############
-Epoch 28 | Train loss: 1.4659112691879272
-Epoch 28 | Test acc: 0.9854910714285714
-############# Starting Epoch 29 | LR: 0.001 #############
-Epoch 29 | Train loss: 1.4659085273742676
-Epoch 29 | Test acc: 0.9832589285714286
-############# Starting Epoch 30 | LR: 0.0001 #############
-Epoch 30 | Train loss: 1.465844750404358
-Epoch 30 | Test acc: 0.984375
-############# Starting Epoch 31 | LR: 0.0001 #############
-Epoch 31 | Train loss: 1.465785026550293
-Epoch 31 | Test acc: 0.9877232142857143
-############# Starting Epoch 32 | LR: 0.0001 #############
-Epoch 32 | Train loss: 1.4656418561935425
-Epoch 32 | Test acc: 0.9854910714285714
-############# Starting Epoch 33 | LR: 0.0001 #############
-Epoch 33 | Train loss: 1.4656494855880737
-Epoch 33 | Test acc: 0.984375
-############# Starting Epoch 34 | LR: 0.0001 #############
-Epoch 34 | Train loss: 1.4656107425689697
-Epoch 34 | Test acc: 0.9821428571428571
-############# Starting Epoch 35 | LR: 0.0001 #############
-Epoch 35 | Train loss: 1.4657570123672485
-Epoch 35 | Test acc: 0.9832589285714286
-############# Starting Epoch 36 | LR: 0.0001 #############
-Epoch 36 | Train loss: 1.4656922817230225
-Epoch 36 | Test acc: 0.984375
-############# Starting Epoch 37 | LR: 0.0001 #############
-Epoch 37 | Train loss: 1.4657434225082397
-Epoch 37 | Test acc: 0.9821428571428571
-############# Starting Epoch 38 | LR: 0.0001 #############
-Epoch 38 | Train loss: 1.4657350778579712
-Epoch 38 | Test acc: 0.9877232142857143
-############# Starting Epoch 39 | LR: 0.0001 #############
-Epoch 39 | Train loss: 1.4657338857650757
-Epoch 39 | Test acc: 0.984375
-############# Starting Epoch 40 | LR: 0.0001 #############
-Epoch 40 | Train loss: 1.4656901359558105
-Epoch 40 | Test acc: 0.9832589285714286
-############# Starting Epoch 41 | LR: 0.0001 #############
-Epoch 41 | Train loss: 1.4657139778137207
-Epoch 41 | Test acc: 0.984375
-############# Starting Epoch 42 | LR: 0.0001 #############
-Epoch 42 | Train loss: 1.4655660390853882
-Epoch 42 | Test acc: 0.9821428571428571
-############# Starting Epoch 43 | LR: 0.0001 #############
-Epoch 43 | Train loss: 1.4655570983886719
-Epoch 43 | Test acc: 0.9888392857142857
-############# Starting Epoch 44 | LR: 0.0001 #############
-Epoch 44 | Train loss: 1.4656951427459717
-Epoch 44 | Test acc: 0.9821428571428571
+Epoch 9 | Train loss: 1.4710966348648071
+Epoch 9 | Test acc: 0.9896
+############# Starting Epoch 10 | LR: 0.001 #############
+Epoch 10 | Train loss: 1.4688793420791626
+Epoch 10 | Test acc: 0.9906
+############# Starting Epoch 11 | LR: 0.001 #############
+Epoch 11 | Train loss: 1.4681963920593262
+Epoch 11 | Test acc: 0.9912
+############# Starting Epoch 12 | LR: 0.001 #############
+Epoch 12 | Train loss: 1.467808723449707
+Epoch 12 | Test acc: 0.9911
+############# Starting Epoch 13 | LR: 0.001 #############
+Epoch 13 | Train loss: 1.4676486253738403
+Epoch 13 | Test acc: 0.9911
+############# Starting Epoch 14 | LR: 0.001 #############
+Epoch 14 | Train loss: 1.467488169670105
+Epoch 14 | Test acc: 0.9911
+############# Starting Epoch 15 | LR: 0.0001 #############
+Epoch 15 | Train loss: 1.4672154188156128
+Epoch 15 | Test acc: 0.9915
+############# Starting Epoch 16 | LR: 0.0001 #############
+Epoch 16 | Train loss: 1.4672225713729858
+Epoch 16 | Test acc: 0.9915
+############# Starting Epoch 17 | LR: 0.0001 #############
+Epoch 17 | Train loss: 1.467185616493225
+Epoch 17 | Test acc: 0.9909
+############# Starting Epoch 18 | LR: 0.0001 #############
+Epoch 18 | Train loss: 1.4671369791030884
+Epoch 18 | Test acc: 0.9914
+############# Starting Epoch 19 | LR: 0.0001 #############
+Epoch 19 | Train loss: 1.4671047925949097
+Epoch 19 | Test acc: 0.9912
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp56k03dc_/temp.m4v
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmpzc0226xo/temp.m4v
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_0_target2.gif
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_0_target8.gif
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp78_n6wix/temp.m4v
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp217_fefh/temp.m4v
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_1_target9.gif
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_1_target0.gif
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp_pze7_p9/temp.m4v
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmpd92yobka/temp.m4v
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_2_target4.gif
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_2_target1.gif
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp4gpaq87y/temp.m4v
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmpc90x4e8f/temp.m4v
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_3_target4.gif
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_3_target1.gif
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp8m6aw8n4/temp.m4v
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp1i7dqhoi/temp.m4v
 Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_4_target7.gif
+MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_4_target6.gif

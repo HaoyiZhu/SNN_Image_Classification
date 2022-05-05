@@ -9,16 +9,17 @@ model:
 
 data:
   root: "./data"
-  subset: 10
+  subset: 1
+  num_workers: 32
 
 train:
-  batch_size: 128
-  num_epochs: 45
+  batch_size: 1024
   num_steps: 50
+  num_epochs: 20
   lr: 1e-2
   lr_step:
+    - 10
     - 15
-    - 30
   lr_factor: 0.1
 
 hydra:

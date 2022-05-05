@@ -49,7 +49,7 @@ def main(cfg):
     logger.info("******************************")
 
     train_dataloader, test_dataloader = build_dataloader(
-        batch_size=cfg.train.batch_size, path=cfg.data.root, subset=cfg.data.subset
+        batch_size=cfg.train.batch_size, path=cfg.data.root, subset=cfg.data.subset, num_workers=cfg.data.num_workers
     )
 
     m = build_model(device=device, slope=cfg.model.slope, beta=cfg.model.beta)
