@@ -1,7 +1,7 @@
 defaults:
   - _self_  # all below configs will override this conf.yaml
 
-exp_id: "default"
+exp_id: "static"
 
 model:
   slope: 25
@@ -9,6 +9,7 @@ model:
 
 data:
   root: "./data"
+  spike: False
   subset: 1
   num_workers: 32
 

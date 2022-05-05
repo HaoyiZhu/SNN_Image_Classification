@@ -2,5 +2,6 @@ cache/
 data/
 exp/
 *.egg-info/
+*/__pycache__/
 
 train.log
