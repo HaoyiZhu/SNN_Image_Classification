@@ -54,7 +54,7 @@ All other flags can be found [here](configs/default.yaml).
 
 The results and logs can be found in `exp/{exp_id}/` after running my script, which contains the checkpoints, logs and some visualization results.
 
-For static data, I achieve a final test accuracy of  **99.12%**. The log file can be found [here](docs/static/training.log). For spike data, I achieve  a final test accuracy of **%**. The log file can be found [here](docs/spike/training.log). You can reduce the `data.subset` parameter or raise the `train.num_epochs` parameter in configuration to obtain a better result.
+For static data, I achieve a final test accuracy of  **99.12%**. The log file can be found [here](docs/static/training.log). For spike data, I achieve  a final test accuracy of **97.05%**. The log file can be found [here](docs/spike/training.log). You can reduce the `data.subset` parameter or raise the `train.num_epochs` parameter in configuration to obtain a better result.
 
 ### Static data
 
