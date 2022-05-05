@@ -66,6 +66,10 @@ def main(cfg):
         device=device, slope=cfg.model.slope, beta=cfg.model.beta, spike=cfg.data.spike
     )
 
+    if cfg.model.checkpoint:
+        logger.info(f'Loading model from {cfg.model.checkpoint}...')
+        m.load_state_dict(torch.load(cfg.model.checkpoint))
+
     optimizer = torch.optim.Adam(m.parameters(), lr=cfg.train.lr, betas=(0.9, 0.999))
     criterion = SF.ce_rate_loss()
 

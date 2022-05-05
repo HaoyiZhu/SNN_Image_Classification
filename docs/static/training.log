@@ -61,23 +61,3 @@ Epoch 18 | Test acc: 0.9914
 ############# Starting Epoch 19 | LR: 0.0001 #############
 Epoch 19 | Train loss: 1.4671047925949097
 Epoch 19 | Test acc: 0.9912
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmpzc0226xo/temp.m4v
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_0_target8.gif
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp217_fefh/temp.m4v
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_1_target0.gif
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmpd92yobka/temp.m4v
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_2_target1.gif
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmpc90x4e8f/temp.m4v
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_3_target1.gif
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -y /tmp/tmp1i7dqhoi/temp.m4v
-Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x700 -pix_fmt rgba -r 40.0 -loglevel error -i pipe: -filter_complex 'split [a][b];[a] palettegen [p];[b][p] paletteuse' -y ./exp/default/spike_bar_4_target6.gif

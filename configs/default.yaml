@@ -6,6 +6,7 @@ exp_id: "static"
 model:
   slope: 25
   beta: 0.5
+  checkpoint: ''
 
 data:
   root: "./data"

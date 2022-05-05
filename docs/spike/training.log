@@ -1,0 +1,63 @@
+******************************
+{'exp_id': 'spike', 'model': {'slope': 25, 'beta': 0.5}, 'data': {'root': './data', 'spike': True, 'subset': 1, 'num_workers': 32}, 'train': {'batch_size': 128, 'num_steps': 50, 'num_epochs': 20, 'lr': 0.01, 'lr_step': [10, 15], 'lr_factor': 0.1}}
+******************************
+############# Starting Epoch 0 | LR: 0.01 #############
+Epoch 0 | Train loss: 1.9662270545959473
+Epoch 0 | Test acc: 0.9262
+############# Starting Epoch 1 | LR: 0.01 #############
+Epoch 1 | Train loss: 1.800815463066101
+Epoch 1 | Test acc: 0.9485
+############# Starting Epoch 2 | LR: 0.01 #############
+Epoch 2 | Train loss: 1.7720719575881958
+Epoch 2 | Test acc: 0.9495
+############# Starting Epoch 3 | LR: 0.01 #############
+Epoch 3 | Train loss: 1.7542694807052612
+Epoch 3 | Test acc: 0.9574
+############# Starting Epoch 4 | LR: 0.01 #############
+Epoch 4 | Train loss: 1.7458094358444214
+Epoch 4 | Test acc: 0.9595
+############# Starting Epoch 5 | LR: 0.01 #############
+Epoch 5 | Train loss: 1.739497184753418
+Epoch 5 | Test acc: 0.9659
+############# Starting Epoch 6 | LR: 0.01 #############
+Epoch 6 | Train loss: 1.7344539165496826
+Epoch 6 | Test acc: 0.9639
+############# Starting Epoch 7 | LR: 0.01 #############
+Epoch 7 | Train loss: 1.7297545671463013
+Epoch 7 | Test acc: 0.9669
+############# Starting Epoch 8 | LR: 0.01 #############
+Epoch 8 | Train loss: 1.7253469228744507
+Epoch 8 | Test acc: 0.966
+############# Starting Epoch 9 | LR: 0.01 #############
+Epoch 9 | Train loss: 1.7210410833358765
+Epoch 9 | Test acc: 0.9604
+############# Starting Epoch 10 | LR: 0.001 #############
+Epoch 10 | Train loss: 1.7110670804977417
+Epoch 10 | Test acc: 0.9695
+############# Starting Epoch 11 | LR: 0.001 #############
+Epoch 11 | Train loss: 1.7087562084197998
+Epoch 11 | Test acc: 0.9705
+############# Starting Epoch 12 | LR: 0.001 #############
+Epoch 12 | Train loss: 1.7072134017944336
+Epoch 12 | Test acc: 0.9692
+############# Starting Epoch 13 | LR: 0.001 #############
+Epoch 13 | Train loss: 1.7061645984649658
+Epoch 13 | Test acc: 0.9702
+############# Starting Epoch 14 | LR: 0.001 #############
+Epoch 14 | Train loss: 1.7051419019699097
+Epoch 14 | Test acc: 0.9704
+############# Starting Epoch 15 | LR: 0.0001 #############
+Epoch 15 | Train loss: 1.7045117616653442
+Epoch 15 | Test acc: 0.9705
+############# Starting Epoch 16 | LR: 0.0001 #############
+Epoch 16 | Train loss: 1.704077959060669
+Epoch 16 | Test acc: 0.9704
+############# Starting Epoch 17 | LR: 0.0001 #############
+Epoch 17 | Train loss: 1.7038878202438354
+Epoch 17 | Test acc: 0.9708
+############# Starting Epoch 18 | LR: 0.0001 #############
+Epoch 18 | Train loss: 1.703575849533081
+Epoch 18 | Test acc: 0.9705
+############# Starting Epoch 19 | LR: 0.0001 #############
+Epoch 19 | Train loss: 1.7035579681396484
+Epoch 19 | Test acc: 0.9705
